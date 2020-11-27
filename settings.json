@@ -1,0 +1,55 @@
+{
+    "lstm": {
+        "agnews": {
+            "num_classes": 4,
+            "max_len": 128,
+            "keywords": ["world", "sports", "business", "science", "technology"],
+            "batch_size": 2048,
+            "lr": 0.008
+        },
+        "imdb": {
+            "num_classes": 2,
+            "max_len": 512,
+            "keywords": ["negative", "positive"],
+            "batch_size": 512,
+            "lr": 0.007
+        },
+        "newsgroup": {
+            "num_classes": 20,
+            "max_len": 1024,
+            "keywords": ["atheism", "computer", "graphics", "microsoft", "miscellaneous", "system", "hardware", "windows", "mac", "ibm", "sale",
+                         "recreation", "entertainment", "auto", "motorcycle", "sports", "baseball", "hockey", "science", "cryptography", "electronics",
+                         "medical", "astronomy", "space", "social", "religion", "christian", "gun", "politics", "arab", "mideast"],
+            "batch_size": 32,
+            "lr": 0.007
+        }
+    },
+    "bert": {
+        "agnews": {
+            "num_classes": 4,
+            "max_len": 128,
+            "keywords": ["world", "sports", "business", "science", "technology"],
+            "batch_size": 16,
+            "epoch": 3,
+            "lr": 5e-5
+        },
+        "imdb": {
+            "num_classes": 2,
+            "max_len": 512,
+            "keywords": ["negative", "positive"],
+            "batch_size": 16,
+            "epoch": 3,
+            "lr": 5e-5
+        },
+        "newsgroup": {
+            "num_classes": 20,
+            "max_len": 512,
+            "keywords": ["atheism", "computer", "graphics", "microsoft", "miscellaneous", "system", "hardware", "windows", "mac", "ibm", "sale",
+                         "recreation", "entertainment", "auto", "motorcycle", "sports", "baseball", "hockey", "science", "cryptography", "electronics",
+                         "medical", "astronomy", "space", "social", "religion", "christian", "gun", "politics", "arab", "mideast"],
+            "batch_size": 32,
+            "epoch": 4,
+            "lr": 5e-5
+        }
+    }
+}
